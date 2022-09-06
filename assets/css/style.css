@@ -1,0 +1,48 @@
+:root {
+    --lightgrey: rgb(211, 204, 204);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* border:1px solid red; */
+}
+
+body {
+    font-family: 'Fredoka One', cursive;
+}
+.titleblock {
+    background-color: blue;
+    background-image: linear-gradient(to right, rgb(60, 131, 231), rgb(36, 11, 177));
+}
+
+.sidenav {
+    height: 100%;
+}
+
+#citylabel {
+    font-size:xx-large;
+}
+.fiveday {
+    /* display:grid; */
+    
+    
+}
+.day {
+    padding:20px;
+    margin:auto;
+}
+
+.dayWeather {
+    padding: 1rem;
+    border: 2px solid var(--lightgrey);
+    margin: 2rem; 0;
+}
+/* .flex-item {
+    height:10vh;
+    width:20%;
+    margin:5px;
+    padding:5px;
+    font-size:32px;
+} */
