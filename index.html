@@ -8,9 +8,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- JQuery -->
-    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +20,7 @@
 
 <body>
     <div class="mt-0 p-5 bg-primary text-white text-center titleblock">
-        <h1><i class="fa-solid fa-cloud-sun-rain"></i>  Weather Dashboard  <i class="fa-solid fa-temperature-half"></i></h1> 
+        <h1><i class="fa-solid fa-cloud-sun-rain"></i>  Weather Dashboard  <i class="fa-solid fa-temperature-half"></i></h1>    
     </div>
     <div class="container-fluid">
         <div class="row content">
@@ -33,48 +31,23 @@
                         <input type="text" class="form-control" placeholder="Taipei" id="city">
                         <button type="submit" class="btn btn-default">Search</button>
                     </form>
+                    <div id="history"></div>
                 </section>
             </div>
-            <div class="col-sm-9">
+            <div class="col-sm-9 mainContainer hide">
                 <div class="dayWeather">
                     <h2 class="cityName">CITY</h2>
+                    <div class="weatherIcon"><img src=""/></div>
                     <p class="temp"></p>
                     <p class="wind"></p>
                     <p class="humidity"></p>
                     <p class="uvIndex"></p>
                 </div>
                 <h3 class="col-sm-9">5-Day Forecast:</h3>
-                <div class="row fiveday">
-                    <div class="col-sm-2 day">
-                      <!-- <div class="well"> -->
-                        <h4>Day 1</h4>
-                        <p>Weather</p> 
-                      <!-- </div> -->
-                    </div>
-                    <div class="col-sm-2 day">
-                          <h4>Day 2</h4>
-                          <p>Weather</p> 
-                      </div>
-                      <div class="col-sm-2 day">
-                        <h4>Day 3</h4>
-                        <p>Weather</p> 
-                    </div>
-                    <div class="col-sm-2 day">
-                        <h4>Day 4</h4>
-                        <p>Weather</p> 
-                    </div>
-                    <div class="col-sm-2 day">
-                        <h4>Day 5</h4>
-                        <p>Weather</p> 
-                    </div>
-            </div>
+                <div class="row fiveday" id="fivedayforecast"></div>
         </div>
     </div>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>-->
     <script src="./assets/js/script.js"></script> 
 </body>
 </html>
