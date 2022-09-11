@@ -13,6 +13,9 @@
 body {
     font-family: 'Fredoka One', cursive;
 }
+.mainContainer, h3 {
+    margin-top: 1rem;
+}
 .uvIndex {
     width:max-content;
 }
@@ -62,6 +65,9 @@ body {
 #form-group {
     display:flexbox;
     border-bottom: 2px solid var(--lightgrey);
+}
+.card-body {
+    padding:0 1.25rem;
 }
 
 .btn, .form-control, .button{

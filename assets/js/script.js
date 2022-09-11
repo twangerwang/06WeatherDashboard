@@ -113,6 +113,12 @@ function forecastDisplay (forecast, cityInput){
         forecastIcon.setAttribute("src", "https://openweathermap.org/img/wn/"+forecastIconCode+"@2x.png");
         fiveDayForecastEl.appendChild(forecastIcon);
 
+        // set description, create, and append entry
+        var forecastDescription = document.createElement("p");
+        forecastDescription.textContent = dailyForecast["weather"]["0"]["description"];
+        forecastDescription.classList = "card-body text-center";
+        fiveDayForecastEl.appendChild(forecastDescription);
+
         // set temperature, create, and append entry
         var forecastTemp = document.createElement("span");
         forecastTemp.classList = "card-body text-center";
