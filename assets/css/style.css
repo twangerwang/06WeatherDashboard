@@ -1,5 +1,6 @@
 :root {
     --lightgrey: rgb(211, 204, 204);
+    --lightblue:rgb(8, 100, 220);
 }
 
 * {
@@ -12,6 +13,24 @@
 body {
     font-family: 'Fredoka One', cursive;
 }
+.uvIndex {
+    width:max-content;
+}
+.uvtwo {
+    background-color: green;
+}
+.uvfive {
+    background-color: yellow;
+}
+.uveight {
+    background-color: orange;
+}
+.uvten {
+    background-color: red;
+}
+.uvmax {
+    background-color: purple;
+}
 .titleblock {
     background-color: blue;
     background-image: linear-gradient(to right, rgb(60, 131, 231), rgb(36, 11, 177));
@@ -20,15 +39,15 @@ body {
 .sidenav {
     height: 100%;
 }
+.row {
+    display:flexbox;
+    justify-content: space-around;
+}
 
 #citylabel {
     font-size:xx-large;
 }
-.fiveday {
-    /* display:grid; */
-    
-    
-}
+
 .day {
     padding:20px;
     margin:auto;
@@ -37,12 +56,49 @@ body {
 .dayWeather {
     padding: 1rem;
     border: 2px solid var(--lightgrey);
-    margin: 2rem; 0;
+    margin: 2rem, 0;
 }
-/* .flex-item {
-    height:10vh;
-    width:20%;
-    margin:5px;
-    padding:5px;
-    font-size:32px;
-} */
+
+#form-group {
+    display:flexbox;
+    border-bottom: 2px solid var(--lightgrey);
+}
+
+.btn, .form-control, .button{
+    display: block;
+    width:100%;
+}
+
+    .btn{
+    margin-top: 0.5rem;
+    background-color: rgb(8, 100, 220);
+    color:var(--lightgrey);
+    font-weight:lighter;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.btn:hover {
+    background-color: rgb(7, 35, 177);
+    color:var(--lightgrey);
+}
+.button {
+    margin-top: 0.5rem;
+    font-weight:lighter;
+    text-align: center;
+    background-color: var(--lightgrey);
+    border-radius: 0.25rem;
+    padding: 6px 0px;
+    color:var(--lightblue);
+    border-color: var(--lightgrey);
+    /* border:none; */
+}
+.button:hover {
+    background-color: rgb(99, 100, 100);
+    color:var(--lightgrey);
+}
+.hide {
+    display:none;
+}
+.show {
+    display: block;
+}
