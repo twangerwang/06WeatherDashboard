@@ -23,7 +23,7 @@ The images below shows the webpage created
 https://twangerwang.github.io/06WeatherDashboard/
 
 ## Credits
-icons from FontAwesome, fonts from Google
+icons from FontAwesome, fonts from Google, current and forecast data from OpenWeather One Call API, and UV Index from Weather Bit API.
 
 ## License
 MIT License
